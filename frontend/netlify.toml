@@ -1,0 +1,11 @@
+[build]
+  base = "frontend"
+  command = "yarn build"
+  publish = ".next"
+
+[functions]
+  directory = "frontend/netlify/functions"
+
+[context.production.environment]
+  # If you use next export instead of next build, set to "true"
+  # NETLIFY_NEXT_PLUGIN_SKIP = "true"
